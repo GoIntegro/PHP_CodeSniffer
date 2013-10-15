@@ -18,6 +18,20 @@
         "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name%5B%5D=PHP_CodeSniffer",
         "source": "https://github.com/squizlabs/PHP_CodeSniffer"
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "code-sniffer/symfony2-standard",
+                "version": "1",
+                "source": {
+                    "url": "git://github.com/opensky/Symfony2-coding-standard.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        }
+    ],
     "autoload": {
         "classmap": [
             "CodeSniffer.php",
@@ -51,7 +65,8 @@
     },
     "require": {
         "php": ">=5.1.2",
-        "ext-tokenizer": "*"
+        "ext-tokenizer": "*",
+        "code-sniffer/symfony2-standard": "*"
     },
     "bin": [
         "scripts/phpcs"
